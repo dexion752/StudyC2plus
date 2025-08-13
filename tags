@@ -1,0 +1,25 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Complex	Complex.cpp	/^    Complex (const Complex& c) { real = c.real; img = c.img; }$/;"	f	class:Complex
+Complex	Complex.cpp	/^    Complex (double real, double img) : real(real), img(img) {}$/;"	f	class:Complex
+Complex	Complex.cpp	/^class Complex$/;"	c	file:
+get_number	Complex.cpp	/^double Complex::get_number(const char *str, int from, int to) {$/;"	f	class:Complex
+img	Complex.cpp	/^    double real, img;$/;"	m	class:Complex	file:
+main	Complex.cpp	/^int main(int argc, char *argv[])$/;"	f
+operator *	Complex.cpp	/^Complex Complex::operator*(const Complex& c) {$/;"	f	class:Complex
+operator *=	Complex.cpp	/^Complex& Complex::operator*=(const Complex c) {$/;"	f	class:Complex
+operator +	Complex.cpp	/^Complex Complex::operator+(const Complex& c) {$/;"	f	class:Complex
+operator +	Complex.cpp	/^Complex Complex::operator+(const char* str) {$/;"	f	class:Complex
+operator +	Complex.cpp	/^Complex operator+(const Complex& a, const Complex& b) {$/;"	f
+operator +=	Complex.cpp	/^Complex& Complex::operator+=(const Complex c) {$/;"	f	class:Complex
+operator -	Complex.cpp	/^Complex Complex::operator-(const Complex& c) {$/;"	f	class:Complex
+operator -=	Complex.cpp	/^Complex& Complex::operator-=(const Complex c) {$/;"	f	class:Complex
+operator /	Complex.cpp	/^Complex Complex::operator\/(const Complex& c) {$/;"	f	class:Complex
+operator /=	Complex.cpp	/^Complex& Complex::operator\/=(const Complex c) {$/;"	f	class:Complex
+operator =	Complex.cpp	/^Complex& Complex::operator=(const Complex& c) {$/;"	f	class:Complex
+println	Complex.cpp	/^    void println() {$/;"	f	class:Complex
+real	Complex.cpp	/^    double real, img;$/;"	m	class:Complex	file:
