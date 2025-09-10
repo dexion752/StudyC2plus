@@ -15,6 +15,8 @@ public:
     Complex operator/(const Complex& c);
     Complex& operator=(const Complex& c);
 
+    // 두 개의 객체 사이의 이항 연산자이지만 한 객체만 값이 바뀐다든지 등의 
+    // 동등하지 않은 이항 연산자는 멤버 함수로 오버로딩한다.
     Complex& operator+=(const Complex c);
     Complex& operator-=(const Complex c);
     Complex& operator*=(const Complex c);
@@ -31,6 +33,9 @@ private:
     /* data */
     double real, img;
 };
+
+// 두 개의 동등한 객체 사이에서의 이항 연산자는 멤버 함수가 아닌
+// 외부 함구로 오버로딩한다. 
 Complex operator+(const Complex& a, const Complex& b) {
     // Complex temp(a);
     // return a + b;

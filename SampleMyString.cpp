@@ -34,6 +34,8 @@ public:
     int compare(const MyString& str) const;
 
     bool operator==(MyString& str); 
+    char& operator[](const int index);
+
 private:
     char* string_content;
     int string_length;
@@ -291,23 +293,30 @@ int MyString::compare(const MyString& str) const {
 bool MyString::operator==(MyString& str) {
     return !compare(str);
 }
+char& MyString::operator[](const int index) {
+    return string_content[index];
+}
 int main(int argc, char *argv[])
 {
-    MyString str1("a word");
-    MyString str2("sentence");
-    MyString str3("sentence");
+    MyString str("abcdef");
+    str[3] = 'c';
 
-    if (str1 == str2) {
-        std::cout << "str1과 str2는 같다." << std::endl;
-    } else {
-        std::cout << "str1과 str2는 다르다." << std::endl;
-    }
-
-    if (str2 == str3) {
-        std::cout << "str2와 str3은 같다." << std::endl;
-    } else {
-        std::cout << "str2와 str3은 다르다." << std::endl;
-    }
+    str.println();
+    // MyString str1("a word");
+    // MyString str2("sentence");
+    // MyString str3("sentence");
+    //
+    // if (str1 == str2) {
+    //     std::cout << "str1과 str2는 같다." << std::endl;
+    // } else {
+    //     std::cout << "str1과 str2는 다르다." << std::endl;
+    // }
+    //
+    // if (str2 == str3) {
+    //     std::cout << "str2와 str3은 같다." << std::endl;
+    // } else {
+    //     std::cout << "str2와 str3은 다르다." << std::endl;
+    // }
 
     // MyString str1("abcdef");
     // MyString str2("abcde");
